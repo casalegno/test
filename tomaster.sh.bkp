@@ -81,7 +81,7 @@ sed -i "s/'version'[[:space:]]*=>[[:space:]]*'[^']*'/'version' => '$VERSION'/g" 
 
 # Committo la modifica della config
 echo -e "${YELLOW}Eseguo la commit della modifica al file di config...${NC}"
-git add config.php
+git add $CONFIG
 git commit 
 echo -e "${YELLOW}Eseguo il push su origin master della commit?...${NC}"
 confirm
